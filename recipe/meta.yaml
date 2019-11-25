@@ -1,4 +1,4 @@
-{% set version = "0.5.1" %}
+{% set version = "0.6.1" %}
 
 package:
   name: label-maker
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/label-maker/label-maker-{{ version }}.tar.gz
-  sha256: 1e0b755b3880bf7b8e2f957b0a48ddc3369e6d4d8095d95e45729ba6bc2edaa5
+  sha256: 4c5f3459d24d4d59de60b13e02be4e45c6134bc75a07c54dd5fd81fcfe3244cc
 
 build:
-  number: 1
+  number: 0
   skip: True  # [py2k]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
