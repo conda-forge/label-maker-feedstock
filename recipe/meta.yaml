@@ -9,8 +9,8 @@ source:
   sha256: 35fc76863c6518bf00d86c22b3d3325e8563b92e0061adfcdc574fc35e2cf6ee
 
 build:
+  noarch: python
   number: 0
-  skip: True  # [py2k]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
     - label-maker=label_maker.main:cli
