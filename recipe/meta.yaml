@@ -41,6 +41,7 @@ requirements:
     - mapbox-vector-tile >=1.2.0
     - mbutil >=0.3.0
     - tilepie >=0.2.1
+    - tqdm
 
 test:
   imports:
