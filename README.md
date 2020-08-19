@@ -5,7 +5,7 @@ Home: https://github.com/developmentseed/label-maker/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Data preparation for satellite machine learning
 

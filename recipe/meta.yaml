@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: label-maker
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/l/label-maker/label-maker-{{ version }}.tar.gz
-  sha256: 19270d87d8087270cfc750ebc16f1cf1f5cfb8fe7349f6794b4408445ce4be29
+  sha256: 5dcd248c3fd1f801be6260c84143e9f05e131d07fcb8d98036837b4b5913f1a5
 
 build:
   noarch: python
