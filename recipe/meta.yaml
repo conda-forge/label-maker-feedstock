@@ -5,22 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/l/label-maker/label-maker-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/l/label-maker/label-maker-{{ version }}.tar.gz
   sha256: e0a3d9198ca29cb9b2ebf8d6645c0ff7848d42333f974b1b2ee3976ced33af4f
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - label-maker=label_maker.main:cli
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
   run:
-    - python
+    - python >={{ python_min }}
     - numpy >=1.13.3
     - cerberus >=1.1
     - click >=6.7
@@ -44,6 +44,8 @@ requirements:
     - tqdm
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - label_maker
   commands:
